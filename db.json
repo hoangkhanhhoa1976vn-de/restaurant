@@ -1,0 +1,168 @@
+{
+  "tables": [
+    {
+      "id": "1",
+      "namecustomer": "khanh hoa",
+      "quantity": "4",
+      "status": true
+    },
+    {
+      "id": "2",
+      "namecustomer": "bgdfnfg",
+      "quantity": "5",
+      "status": false
+    },
+    {
+      "id": "3",
+      "namecustomer": "ngoc linh",
+      "quantity": "5",
+      "status": false
+    },
+    {
+      "id": "4",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": false
+    },
+    {
+      "id": "5",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": "6",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": false
+    },
+    {
+      "id": "7",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": "8",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": false
+    },
+    {
+      "id": "9",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": "10",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": false
+    },
+    {
+      "id": "11",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": "12",
+      "namecustomer": "a title",
+      "quantity": 100,
+      "status": false
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "name": "fried chicken",
+      "price": "15",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768288715/bobqzrgi6veddal31tbc.png"
+    },
+    {
+      "name": "Goose Liver",
+      "price": "70",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768526468/nimk1ibtpziocw2dspdu.png",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "steak",
+      "price": "20",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768289192/mjfjeouvpxmu49pj7xuu.png"
+    },
+    {
+      "id": "4",
+      "name": "French Fries",
+      "price": "7",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768359725/j0wre1hin3xujo4l5t01.png"
+    },
+    {
+      "id": "5",
+      "name": "Sushi",
+      "price": "30",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768359840/tuvlcb8rjqoxulxokkbo.png"
+    },
+    {
+      "id": "6",
+      "name": "Pasta",
+      "price": "60",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768360230/mlwzbqoocsdgubfwoi3h.png"
+    },
+    {
+      "id": "7",
+      "name": "Salad",
+      "price": "3",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768526583/hc68hmtc3httsdgvbklb.png"
+    },
+    {
+      "id": "8",
+      "name": "Sandwich",
+      "price": "8",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768526761/kgmi9bkwndsxquciyxew.png"
+    },
+    {
+      "id": "9",
+      "name": "Cao Lau noodle soup",
+      "price": "45",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768527401/ppkcnf2oml2sc5vacbvw.png"
+    },
+    {
+      "id": "10",
+      "name": "Lobster",
+      "price": "",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768527437/ltwmoepvfba0amiyrqr5.png"
+    },
+    {
+      "id": "11",
+      "name": "Burrito",
+      "price": "",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768527469/i62czpkrs33biwyyiqzf.png"
+    },
+    {
+      "id": "12",
+      "name": "Potatoes fries",
+      "price": "9",
+      "imgurl": "https://res.cloudinary.com/dgnbu754q/image/upload/v1768527690/yr1twz2djt9ljdavkkh0.png"
+    }
+  ],
+  "orders": [
+    {
+      "id": "9437",
+      "idTable": "2",
+      "bill": [
+        {
+          "quantity": "2",
+          "idFood": "1"
+        },
+        {
+          "quantity": "3",
+          "idFood": "2"
+        }
+      ],
+      "creatAt": "2026-01-19T07:35:22.507Z"
+    }
+  ],
+  "accounts" : []
+}

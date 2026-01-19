@@ -1,42 +1,463 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/Home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-    <body>
+  <body>
+    <div class="admin">
+      <div class="left">
         <header>
-            <!-- place navbar here -->
+          <i class="fa-solid fa-store item"></i>
+          <h1 class="item d-none">PINK STORE</h1>
+          <div class="icon">
+            <i class="fa-solid fa-list item"></i>
+            <i class="fa-solid fa-arrow-right-from-bracket item d-none"></i>
+          </div>
         </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+        <ul>
+          <li>
+            <i class="fa-solid fa-gauge"></i>
+            <p class="item d-none">DASHBOARD</p>
+          </li>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+          <li>
+            <i class="fa-solid fa-calendar"></i>
+            <p class="item d-none">RESERVATION</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-bowl-food"></i>
+            <p class="item d-none">ORDER FOOD</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-cash-register"></i>
+            <p class="item d-none">BILLs</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <p class="item d-none">INFORMATION</p>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="admin-topbar">
+          <div class="tb-left">
+            <div class="tb-brand">PINK STORE</div>
+
+            <button class="tb-circle" title="Logout">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+
+            <button class="tb-circle" title="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="tb-circle" title="Notifications">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+
+            <button class="tb-circle" title="Messages">
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+          </div>
+
+          <div class="tb-right user-menu">
+            <img
+              class="tb-avatar"
+              src="../img/man.png"
+              alt="avatar"
+              id="avatarBtn"
+            />
+
+            <!-- USER DROPDOWN -->
+            <div class="user-dropdown" id="userDropdown">
+              <div class="user-info">
+                <p><strong>Username:</strong> Khánh Hòa</p>
+                <p><strong>Email:</strong> Hoangkhanhhoa1976vn@gmail.com</p>
+              </div>
+
+              <button class="logout-btn">Logout</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">DASHBOARD</div>
+        <div class="box">
+          <div class="container pt-4 table-grid tables"></div>
+        </div>
+        <div class="box">
+          <!-- TOP BAR -->
+
+          <div class="container mt-3">
+            <div class="topbar">
+              <select class="p-2 rounded-pill" aria-label="">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+              <button class="pill pill-green">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Order</span>
+              </button>
+
+              <div class="search-wrap">
+                <input class="search" type="text" placeholder="Search" />
+                <button class="pill pill-green small">Submit Now</button>
+              </div>
+
+              <button
+                class="pill pill-green"
+                data-bs-toggle="modal"
+                data-bs-target="#addfood"
+              >
+                <i class="fa-solid fa-plus"></i>
+                <span>Add Food</span>
+              </button>
+            </div>
+            <!-- FOOD GRID -->
+            <div
+              class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-3 food-grid"
+            ></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="container py-3">
+            <h3 class="fw-bold mb-3">Hóa đơn đã thanh toán</h3>
+
+            <div class="row g-4" id="paidBills">
+              <!-- BILL CARD 1 -->
+              <div class="col-lg-6">
+                <div class="bill-card">
+                  <div class="bill-header">Bàn số : 1</div>
+
+                  <div class="bill-body">
+                    <div class="bill-items">
+                      <div>Spaghetti Bolognese x 2 = 240,000 VND</div>
+                      <div>Fried Rice x 1 = 80,000 VND</div>
+                    </div>
+
+                    <hr />
+
+                    <div class="bill-footer">
+                      <div class="bill-total">
+                        Tổng cộng: <span>320,000 VND</span>
+                      </div>
+                      <div class="bill-time">
+                        Thanh toán lúc: 7/8/2025, 7:57:33 PM
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BILL CARD 2 -->
+              <div class="col-lg-6">
+                <div class="bill-card">
+                  <div class="bill-header">Bàn số : 2</div>
+
+                  <div class="bill-body">
+                    <div class="bill-items">
+                      <div>Grilled Chicken Salad x 1 = 95,000 VND</div>
+                      <div>Beef Steak x 1 = 180,000 VND</div>
+                    </div>
+
+                    <hr />
+
+                    <div class="bill-footer">
+                      <div class="bill-total">
+                        Tổng cộng: <span>275,000 VND</span>
+                      </div>
+                      <div class="bill-time">
+                        Thanh toán lúc: 7/7/2025, 5:00:00 PM
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BILL CARD 3 -->
+              <div class="col-lg-6">
+                <div class="bill-card">
+                  <div class="bill-header">Bàn số : 4</div>
+
+                  <div class="bill-body">
+                    <div class="bill-items">
+                      <div>Spaghetti Bolognese x 1 = 120,000 VND</div>
+                      <div>Margherita Pizza x 1 = 130,000 VND</div>
+                      <div>Fried Rice x 2 = 160,000 VND</div>
+                    </div>
+
+                    <hr />
+
+                    <div class="bill-footer">
+                      <div class="bill-total">
+                        Tổng cộng: <span>410,000 VND</span>
+                      </div>
+                      <div class="bill-time">
+                        Thanh toán lúc: 7/6/2025, 10:30:00 PM
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BILL CARD 4 -->
+              <div class="col-lg-6">
+                <div class="bill-card">
+                  <div class="bill-header">Bàn số : 5</div>
+
+                  <div class="bill-body">
+                    <div class="bill-items">
+                      <div>Beef Steak x 2 = 360,000 VND</div>
+                    </div>
+
+                    <hr />
+
+                    <div class="bill-footer">
+                      <div class="bill-total">
+                        Tổng cộng: <span>360,000 VND</span>
+                      </div>
+                      <div class="bill-time">
+                        Thanh toán lúc: 7/8/2025, 7:35:33 PM
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END -->
+            </div>
+          </div>
+        </div>
+        <div class="box">infor</div>
+      </div>
+    </div>
+    <!-- Modal booking -->
+
+    <div
+      class="modal fade"
+      id="booking"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal Booking</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >CUSTOMER NAME</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="customername"
+                placeholder="Customer name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >QUANTITY</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="quantity"
+                placeholder="Quantity"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" id="modalbooking" class="btn btn-primary">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal ADD FOOD -->
+    <div
+      class="modal fade"
+      id="addfood"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="titleFood">ADD FOOD</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="foodname"
+                placeholder="Enter food name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PRICE</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="foodprice"
+                placeholder="Enter price"
+              />
+            </div>
+            <div>
+              <label for="formFileLg" class="form-label"
+                >Large file input example</label
+              >
+              <input
+                class="form-control form-control-lg"
+                id="formFileLg"
+                type="file"
+              />
+            </div>
+            <div class="d-flex justify-content-center">
+              <img
+                id="img_food"
+                class="w-50"
+                src="../img/Hoa RestaurantRANT.png"
+                alt="KFC"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              CLOSE
+            </button>
+            <button id="add-food" type="button" class="btn btn-primary">
+              ADD FOOD
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal DELETE -->
+
+    <div class="modal fade" id="deleted" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 overflow-hidden border-0 shadow">
+          <div
+            class="modal-header text-white"
+            style="background: linear-gradient(135deg, #6a5af9, #9b5cff)"
+          >
+            <h5 class="modal-title fw-bold">Xác nhận xóa</h5>
+
+            <button
+              type="button"
+              class="btn rounded-circle text-white"
+              style="
+                background: rgba(255, 255, 255, 0.25);
+                width: 36px;
+                height: 36px;
+              "
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span style="font-size: 22px; line-height: 1">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body text-center py-4">
+            Bạn có chắc chắn muốn xóa mục này không?
+          </div>
+
+          <div class="modal-footer border-0 justify-content-center pb-4 gap-3">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              HỦY
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger rounded-pill px-4"
+              id="confirmDeleteBtn"
+            >
+              XÓA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/cloudinaryConfig.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/gettables.js"></script>
+    <script src="../js/order.js"></script>
+    <!-- link file getFoods -->
+    <script src="../js/getfood.js"></script>
+  </body>
 </html>
